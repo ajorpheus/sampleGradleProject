@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/main/java'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'src/test/java'
+        }
+    }
+}
+
+// create Gradle wrapper with command line `gradle wrapper` in terminal
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}
