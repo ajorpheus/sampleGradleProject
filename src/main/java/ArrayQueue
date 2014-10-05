@@ -1,0 +1,51 @@
+/**
+ * This is an circular array based implementation of a bounded
+ * Queue.
+ *
+ * @author Quinn Liu(quinnliu@vt.edu)
+ */
+class ArrayQueue<E> {
+    private static final int defaultSize = 10;
+    private int maxSize;
+    private int frontElementIndex;
+    private int rearElementIndex;
+    private E circularArray[];
+
+    // Constructors
+    Queue(int size) {
+        maxSize = size+1;
+        rearElementIndex = 0;
+        frontElementIndex = 1;
+        circularArray = (E[]) new Object[maxSize];
+    }
+
+    Queue() { this(defaultSize); }
+
+    // Reinitialize
+    void clear() { rearElementIndex = 0; frontElementIndex = 1; }
+
+    // Put "it" in queue
+    boolean enqueue(E it) {
+        if (((rearElementIndex +2) % maxSize) == frontElementIndex) return false;  // Full
+        rearElementIndex = (rearElementIndex +1) % maxSize; // Circular increment
+        circularArray[rearElementIndex] = it;
+        return true;
+    }
+
+    // Remove and return frontElementIndex value
+    E dequeue() {
+        if(length() == 0) return null;
+        E it = circularArray[frontElementIndex];
+        frontElementIndex = (frontElementIndex +1) % maxSize; // Circular increment
+        return it;
+    }
+
+    // Return frontElementIndex value
+    E frontValue() {
+        if (length() == 0) return null;
+        return circularArray[frontElementIndex];
+    }
+
+    // Return queue size
+    int length() { return ((rearElementIndex +maxSize) - frontElementIndex + 1) % maxSize; }
+}
