@@ -1,5 +1,9 @@
 apply plugin: 'java'
 
+repositories {
+    mavenCentral()
+}
+
 sourceSets {
     main {
         java {
@@ -12,6 +16,10 @@ sourceSets {
             srcDir 'src/test/java'
         }
     }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
 }
 
 // create Gradle wrapper with command line `gradle wrapper` in terminal
