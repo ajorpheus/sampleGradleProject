@@ -1,6 +1,6 @@
 # Bounded Queue
 
-## Install in Linux or Mac with Gradle
+## How to run Queue tests through command line in Linux or Mac with Gradle
 
 1. Make sure you have java version 1.7 or 1.8. To check open up a new terminal and type:
    ```sh
@@ -17,7 +17,10 @@
    BUILD SUCCESSFUL # If you see `BUILD SUCCESSFUL` all of the tests have passed! 
    ```
 
-## Implementation strategy
+## Queue Implementation strategy
+The `Queue.java` class is in `src/main/java/Queue.java`  
+The `QueueTest.java` class is in `src/test/java/QueueTest.java`
+
 To optimize for algorithmic runtime, memory usage, and memory throughput. I
 have implemented the bounded queue as an array based circular queue.  
   
