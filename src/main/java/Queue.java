@@ -16,6 +16,10 @@ public class Queue<E> {
      * @param maxSize The maximum number of elements this queue can hold.
      */
     Queue(int maxSize) {
+        // One extra space is added and the queue is only allowed to have
+        // a max of maxSize number of elements. This is used for the logic
+        // to determine if the queue is empty or full as it is difting
+        // through the circular array.
         this.maxSize = maxSize+1;
         this.rearElementIndex = 0;
         this.frontElementIndex = 1;
@@ -35,7 +39,9 @@ public class Queue<E> {
                     + this.length() + ". Call dequeue() before recalling " +
                     "enqueue()");
         }
-        rearElementIndex = (rearElementIndex +1) % maxSize; // Circular increment
+
+        // increment without going out the bounds of the circular array
+        rearElementIndex = (rearElementIndex +1) % maxSize;
         circularArray[rearElementIndex] = element;
         return true;
     }
@@ -50,7 +56,9 @@ public class Queue<E> {
                     + "Call enqueue() before dequeue()");
         }
         E element = circularArray[frontElementIndex];
-        frontElementIndex = (frontElementIndex +1) % maxSize; // Circular increment
+
+        // increment without going out the bounds of the circular array
+        frontElementIndex = (frontElementIndex +1) % maxSize;
         return element;
     }
 
