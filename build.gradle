@@ -22,6 +22,12 @@ dependencies {
     testCompile 'junit:junit:4.11'
 }
 
+test {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+
 // create Gradle wrapper with command line `gradle wrapper` in terminal
 task wrapper(type: Wrapper) {
     gradleVersion = '1.12'

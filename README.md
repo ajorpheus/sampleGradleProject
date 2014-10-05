@@ -3,7 +3,7 @@
 ## How to run Queue tests through command line in Linux or Mac with Gradle
 
 1. Make sure you have java version 1.7 or 1.8. To check open up a new terminal and type:
-   ```sh
+   ```  
    prompt> java -version
    ```  
    If you don't have java 1.7 install it by going [
@@ -11,10 +11,9 @@
    After installing java 1.7 open up a new terminal to check if java 1.7 is 
    installed by retyping `java -version` in the terminal.
 
-2. To run all of the code in the Linux or Mac terminal type:
-   ```sh
-   prompt/Queue> ./gradlew build
-   BUILD SUCCESSFUL # If you see `BUILD SUCCESSFUL` all of the tests have passed! 
+2. To run all of the code in the Linux or Mac terminal type: 
+   ```
+   prompt/Queue> ./gradlew test
    ```
 
 ## Queue Implementation strategy
