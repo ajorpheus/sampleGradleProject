@@ -3,11 +3,11 @@ import junit.framework.TestCase;
 /**
  * @author Quinn Liu(quinnliu@vt.edu)
  */
-public class AQueueTest extends TestCase {
-    private AQueue<Integer> queue;
+public class QueueTest extends TestCase {
+    private Queue<Integer> queue;
 
     public void setUp() {
-        this.queue = new AQueue<Integer>(4);
+        this.queue = new Queue<Integer>(4);
     }
 
     public void test_enqueue() {
