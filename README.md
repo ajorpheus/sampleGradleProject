@@ -2,10 +2,12 @@
 
 This repo contains the basic files you need for a Gradle project. If you don't know what
 Gradle is it is basically a way to build your code on Linux/Mac/Windows easily. I prefer
-it over Ant or Maven for building Java code. As an example I have implemented a queue
-with a single test file to show how you want to organize your files. For larger Java
-projects take a look at the `build.gradle` file and file structure at this open source
-brain project: https://github.com/WalnutiQ/WalnutiQ
+it over Ant or Maven for building Java code because you do <b>NOT</b> need to 
+install Gradle in order to use it because you download a wrapper. This greatly simplifies
+the install process. As an example I have implemented a queue with a single test file to 
+show how you want to organize your files. For larger Java projects take a look at the 
+`build.gradle` file and file structure at this open source brain project: 
+https://github.com/WalnutiQ/WalnutiQ
 
 ## How to run Queue tests through command line in Linux or Mac with Gradle
 
@@ -22,6 +24,11 @@ brain project: https://github.com/WalnutiQ/WalnutiQ
    ```
    prompt/SampleGradleProject> ./gradlew clean
    prompt/SampleGradleProject> ./gradlew build
+   ```
+
+3. To run all of the tests in the Windows terminal type:
+   ```
+   prompt/SampleGradleProject> gradlew.bat
    ```
 
 ## Queue Implementation strategy
