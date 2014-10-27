@@ -1,21 +1,21 @@
 # Sample Gradle Project
 
-This repo contains the basic files you need for a Gradle project. If you don't know what
-Gradle is it is basically a way to build your code on Linux/Mac/Windows easily. I prefer
-it over Ant or Maven for building Java code because you do <b>NOT</b> need to 
-install Gradle in order to use it because you download a wrapper. This greatly simplifies
-the install process. As an example I have implemented a queue with a single test file to 
-show how you want to organize your files. For larger Java projects take a look at the 
-`build.gradle` file and file structure at this open source brain project: 
+This repo contains the basic files you need to build your Java code on Linux/Mac/Windows
+using a Gradle. If you don't know what Gradle is, it is basically a way to build your code 
+on Linux/Mac/Windows easily. I prefer it over Ant or Maven for building Java code because 
+you do <b>NOT</b> need to install Gradle in order to use it because you download a wrapper. 
+This greatly simplifies the install process. As an example I have implemented a queue 
+with a single test file to show how you want to organize your files. For larger Java projects 
+take a look at the `build.gradle` file and file structure at this open source brain project: 
 https://github.com/WalnutiQ/WalnutiQ
 
-## How to run Queue tests through command line in Linux or Mac with Gradle
+## How to run tests through command line in Linux/Mac/Windows with Gradle
 
 1. Make sure you have java version 1.6, 1.7 or 1.8. To check open up a new terminal and type:
    ```  
    prompt> java -version
    ```  
-   If you don't have any of the above install java 1.7 by going [
+   If you don't have any of the above, install java 1.7 by going [
    here](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html). 
    After installing java 1.7 open up a new terminal to check if java 1.7 is 
    installed by retyping `java -version` in the terminal.
