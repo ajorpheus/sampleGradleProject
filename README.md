@@ -6,7 +6,8 @@ basically a way to build your code on Linux/Mac/Windows easily. I prefer it
 over Ant or Maven for building Java code because you do <b>NOT</b> need to 
 install Gradle in order to use it because you download a wrapper. This greatly 
 simplifies the install process. As an example I have implemented a queue with 
-a single test file to show how you want to organize your files. For larger 
+a single test file to show how you want to organize your files. I have also
+added a `Main.java` class for you to run your application. For larger 
 Java projects take a look at the `build.gradle` file and file structure at this 
 open source brain project: https://github.com/WalnutiQ/WalnutiQ
 
@@ -22,24 +23,30 @@ open source brain project: https://github.com/WalnutiQ/WalnutiQ
    After installing java 1.7 open up a new terminal to check if java 1.7 is 
    installed by retyping `java -version` in the terminal.
 
-2. To run all of the tests in the Linux or Mac terminal type: 
+2. To run all tests in the Linux or Mac terminal type: 
    ```
-   prompt/SampleGradleProject> ./gradlew clean
-   prompt/SampleGradleProject> ./gradlew build
+   prompt/SampleGradleProject> ./gradlew clean # cleans old compiled code
+   prompt/SampleGradleProject> ./gradlew test
    ```
 
-3. To run all of the tests in the Windows terminal type:
+3. To run all tests in the Windows command prompt type:
    ```
-   prompt/SampleGradleProject> gradlew.bat
+   prompt/SampleGradleProject> gradlew.bat clean 
+   prompt/SampleGradleProject> gradlew.bat test
    ```
 
 ## How to run `Main.java` through command line in Linux/Mac/Windows with Gradle
 
 1. First make sure the above instructions work.
 
-2. Then on Linux or Mac type:
+2. Then on Linux or Mac terminal type:
    ```
    prompt/SampleGradleProject> ./gradlew run
+   Yo what's up human! Oh you think you're fancy
+   ```
+3. And for Windows command prompt type:
+   ```
+   prompt/SampleGradleProject> gradlew.bat run
    Yo what's up human! Oh you think you're fancy
    ```
 
