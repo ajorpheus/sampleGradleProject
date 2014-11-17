@@ -1,17 +1,19 @@
 # Sample Gradle Project
 
-This repo contains the basic files you need to build your Java code on Linux/Mac/Windows
-using a Gradle. If you don't know what Gradle is, it is basically a way to build your code 
-on Linux/Mac/Windows easily. I prefer it over Ant or Maven for building Java code because 
-you do <b>NOT</b> need to install Gradle in order to use it because you download a wrapper. 
-This greatly simplifies the install process. As an example I have implemented a queue 
-with a single test file to show how you want to organize your files. For larger Java projects 
-take a look at the `build.gradle` file and file structure at this open source brain project: 
-https://github.com/WalnutiQ/WalnutiQ
+This repo contains the basic files you need to build your Java code on 
+Linux/Mac/Windows using a Gradle. If you don't know what Gradle is, it is 
+basically a way to build your code on Linux/Mac/Windows easily. I prefer it 
+over Ant or Maven for building Java code because you do <b>NOT</b> need to 
+install Gradle in order to use it because you download a wrapper. This greatly 
+simplifies the install process. As an example I have implemented a queue with 
+a single test file to show how you want to organize your files. For larger 
+Java projects take a look at the `build.gradle` file and file structure at this 
+open source brain project: https://github.com/WalnutiQ/WalnutiQ
 
 ## How to run tests through command line in Linux/Mac/Windows with Gradle
 
-1. Make sure you have java version 1.6, 1.7 or 1.8. To check open up a new terminal and type:
+1. Make sure you have java version 1.6, 1.7 or 1.8. To check open up a new 
+   terminal and type:
    ```  
    prompt> java -version
    ```  
@@ -29,6 +31,16 @@ https://github.com/WalnutiQ/WalnutiQ
 3. To run all of the tests in the Windows terminal type:
    ```
    prompt/SampleGradleProject> gradlew.bat
+   ```
+
+## How to run `Main.java` through command line in Linux/Mac/Windows with Gradle
+
+1. First make sure the above instructions work.
+
+2. Then on Linux or Mac type:
+   ```
+   prompt/SampleGradleProject> ./gradlew run
+   Yo what's up human! Oh you think you're fancy
    ```
 
 ## Queue Implementation strategy

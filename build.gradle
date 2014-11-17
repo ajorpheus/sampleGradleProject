@@ -34,4 +34,4 @@ task wrapper(type: Wrapper) {
     gradleVersion = '1.12'
 }
 
-mainClassName = "Main"
+mainClassName = "Main" // Main.java is located in src/main/java/Main.java
